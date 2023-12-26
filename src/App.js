@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Form from 'react-jsonschema-form';
+import React from 'react';
 import DynamicForm from './components/DynamicForm';
 const App = () => {
   // const [uiSchema, setUiSchema] = useState('');

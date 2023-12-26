@@ -1,0 +1,179 @@
+.dynamic-form-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .json-editor,
+  .form-preview {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .json-editor textarea {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid #007bff; /* Dark blue outline */
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid #007bff; /* Dark blue outline */
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .form-container button {
+    background-color: rgba(13, 67, 134, 0.551);/* Light blue with 10% opacity */
+    color: black;
+    padding: 15px;
+    margin: 10px 0; /* Added margin for spacing */
+    border: 5px;
+    border-color: black;
+    border-radius: 0; /* No border-radius for dynamic sizing */
+    cursor: pointer;/* Dynamic width to cover the whole form horizontally */
+    outline: none;
+  }
+  
+  .form-container button:disabled {
+    background-color: rgba(0, 123, 255, 0.1); 
+    border-color: black;
+    border: 10px; /* Lighter blue for disabled state */
+  }
+  
+  .form-container #submit-btn {
+    background-color: grey;
+    color: white;
+  }
+  .form-container label.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .form-container label.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .form-container label.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .form-container label.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .form-container label.switch input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  .form-container label.switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .form-container [class^="field-"] {
+    background-color: lightblue;
+    margin-bottom: 10px; /* Added margin for spacing */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .form-container [class^="field-"] button {
+    background-color: rgba(13, 67, 134, 0.551); /* Light blue with 10% opacity */
+    color: black;
+    padding: 15px;
+    margin: 0;
+    border: 5px;
+    border-color: black;
+    border-radius: 0; /* No border-radius for dynamic sizing */
+    cursor: pointer; /* Dynamic width to cover the whole form horizontally */
+    outline: none;
+  }
+  
+  .form-container [class^="field-"] button:disabled {
+    background-color: rgba(0, 123, 255, 0.1);
+    border-color: black;
+    border: 10px; /* Lighter blue for disabled state */
+  }
+  
+  .form-container [class^="field-"] #submit-btn {
+    background-color: grey;
+    color: white;
+  }
+  
+  .form-container [class^="field-"] label.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .form-container [class^="field-"] label.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .form-container [class^="field-"] label.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .form-container [class^="field-"] label.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .form-container [class^="field-"] label.switch input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  .form-container [class^="field-"] label.switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .spacing-br{
+    height: 2vh;
+  }
+  
